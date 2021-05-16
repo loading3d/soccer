@@ -1,19 +1,19 @@
-const tLoader = new THREE.TextureLoader();
+const goalTextureLoader = new THREE.TextureLoader();
 
 var topNetMaterial = [
 	new THREE.MeshBasicMaterial({color: 0xFFFFFF}),
 	new THREE.MeshBasicMaterial({color: 0xFFFFFF}),
-	new THREE.MeshBasicMaterial({map: tLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
-	new THREE.MeshBasicMaterial({map: tLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
+	new THREE.MeshBasicMaterial({map: goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
+	new THREE.MeshBasicMaterial({map: goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
 	new THREE.MeshBasicMaterial({color: 0xFFFFFF}),
     new THREE.MeshBasicMaterial({color: 0xFFFFFF})
 ];
 
 var sideNetMaterial = [
-	new THREE.MeshBasicMaterial({map: tLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
-	new THREE.MeshBasicMaterial({map: tLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
+	new THREE.MeshBasicMaterial({map: goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
+	new THREE.MeshBasicMaterial({map: goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
 	new THREE.MeshBasicMaterial({color: 0xFFFFFF}),
-	new THREE.MeshBasicMaterial({map: tLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
+	new THREE.MeshBasicMaterial({map: goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png"), side: THREE.DoubleSide, transparent: true}),
 	new THREE.MeshBasicMaterial({color: 0xFFFFFF}),
     new THREE.MeshBasicMaterial({color: 0xFFFFFF})
 ];
@@ -133,7 +133,7 @@ for(var i=0; i<Nx+1; i++){
 	}
 }
 
-var clothTexture = tloader.load("https://i.ibb.co/fQXyMFh/net2d.png");
+var clothTexture = goalTextureLoader.load("https://i.ibb.co/fQXyMFh/net2d.png");
 clothTexture.wrapS = clothTexture.wrapT = THREE.RepeatWrapping;
 clothTexture.anisotropy = 16;
 
